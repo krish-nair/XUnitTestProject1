@@ -55,5 +55,17 @@ namespace XUnitTestProject1
 
             Assert.Equal(expectedValue, divide, 1);
         }
+
+        [Fact]
+        public void TestAddMethod()
+        {
+            var num1 = 3.2;
+            var num2 = 2.3;
+            var expectedValue = 5.5;
+
+            var sum = MathOperation.Add(num1, num2);
+
+            Assert.Equal(expectedValue, sum, 1);
+        }
     }
 }
